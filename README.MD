@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div align="center">
     <h2>Movie App With Flutter (WIP)</h2>
 </div>
 
