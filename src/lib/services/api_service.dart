@@ -13,14 +13,15 @@ class ApiService {
       throw Exception('Failed to load movies');
     }
   }
-}
 
-void main() async {
-  final ApiService apiService = ApiService();
+  Future<List<dynamic>> fetchCategoryMovies(String category) async {
+    final response =
+        await http.get(Uri.parse('http://$baseUrl/movies/category/$category'));
 
-  List<dynamic> list = await apiService.fetchMovies();
-
-  for (var item in list) {
-    print(item);
+    if (response.statusCode == 200) {
+      return jsonDecode(response.body);
+    } else {
+      throw Exception('Failed to load movies');
+    }
   }
 }

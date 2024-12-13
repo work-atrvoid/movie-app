@@ -47,6 +47,36 @@ void main() async {
     );
   });
 
+  router.get('/movies/category/<category>',
+      (Request request, String category) async {
+    var results = await connection
+        .query('SELECT * FROM movies WHERE genres LIKE "%$category%"; ');
+    var movies = [];
+    for (var row in results) {
+      movies.add({
+        'id': row['id']?.toString(),
+        'title': row['title']?.toString(),
+        'picture': row['picture'].toString(),
+        'rating': row['rating']?.toString(),
+        'year': row['year']?.toString(),
+        'director': row['director']?.toString(),
+        'actors': row['actors']?.toString(),
+        'genres': row['genres']?.toString(),
+        'description': row['description']?.toString(),
+      });
+    }
+    return Response.ok(
+      jsonEncode(movies),
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin':
+            '*', // These are permission for web developing
+        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+      },
+    );
+  });
+
   router.get('/movies/<id>', (Request request, String id) async {
     var results =
         await connection.query('select * from movies where id = ?', [id]);
@@ -78,7 +108,7 @@ void main() async {
   });
 
   final handler =
-      const Pipeline().addMiddleware(logRequests()).addHandler(router);
+      const Pipeline().addMiddleware(logRequests()).addHandler(router.call);
 
   final server = await io.serve(handler, 'localhost', 9090);
   print('Server listening on port ${server.port}');
