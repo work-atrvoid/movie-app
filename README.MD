@@ -2,9 +2,7 @@
     <h1>Movie App With Flutter</h1>
 </div>
 
-
-<video src="assets/sample1.mp4" controls></video>
-
+![](assets/sample1.gif)
 
 <img title="" src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" data-align="inline">    <img title="" src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter" data-align="inline">    ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) 
 
@@ -24,7 +22,7 @@ This project is a **Movie App** built using Flutter as part of a university assi
 
 <div align="center"><h3>Tech Stack</h3></div><hr>
 
-<video src="assets/sample2.mp4" controls></video>
+![](assets/sample2.gif)
 
 - **Frontend Framework:** Flutter
 - **Backend:** Dart
