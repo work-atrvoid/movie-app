@@ -3,7 +3,7 @@
 </div>
 
 
-<video src="assets/sample1.mp4" controls></video>
+<video src="assets/sample1.mp4" width="320" height="240" controls></video>
 
 
 <img title="" src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" data-align="inline">    <img title="" src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter" data-align="inline">    ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) 
@@ -103,6 +103,8 @@ lib/
 2. **Details Screen**
    
    - Displays a movie’s full details, including description and rating.
+
+     <img title="" src="assets/detail.png" alt="" width="398" data-align="center">
 
 <div align="center"><h3>Acknowledgements</h3></div><hr>
 
