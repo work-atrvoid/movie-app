@@ -2,13 +2,7 @@
     <h1>Movie App With Flutter</h1>
 </div>
 
-<<<<<<< HEAD
 ![](assets/sample1.gif)
-=======
-
-<video src="assets/sample1.mp4" width="320" height="240" controls></video>
-
->>>>>>> 6ddd483beaf343ddaeaf4cabfab1c14d0bf577e9
 
 <img title="" src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" data-align="inline">    <img title="" src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter" data-align="inline">    ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) 
 
